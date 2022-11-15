@@ -6,6 +6,7 @@
 ## Vulnerability url: http://127.0.0.1/vogue/dashboard/createservice
 
 ## Loophole location: /dashboard/add-service.php has an arbitrary file upload vulnerability
+## The program is built using the xmapp-php8.1 version
 
 ## process:
 1、Use the admin and admin accounts to log in to the background system
