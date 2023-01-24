@@ -1,4 +1,4 @@
-# The Company Website CMS developed by Torrahclef has an arbitrary file upload vulnerability
+# The Company Website CMS v1.0 developed by Torrahclef has an arbitrary file upload vulnerability
 ## vendors: [https://www.sourcecodester.com/php/11206/church-management-system.html](https://www.sourcecodester.com/php/15517/company-website-cms-php.html)
 
 ## Login account: admin/admin (Super Admin account)
