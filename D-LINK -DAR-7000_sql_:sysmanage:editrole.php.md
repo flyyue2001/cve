@@ -2,10 +2,16 @@ There is a backend SQL injection vulnerability in the D-LINK DAR-7000 series onl
 
 official： http://www.dlink.com.cn/
 
-version:DAR-7000
+version:DAR-7000-40( DAR V31R02B1413C)
+<img width="1321" alt="image" src="https://github.com/flyyue2001/cve/assets/88701694/3dceabf9-d360-43db-9c27-e0e3921bb48c">
 
- Vulnerability Path  ：/sysmanage/editrole.php![image](https://github.com/flyyue2001/cve/assets/88701694/1a753901-4af6-4cd0-bf04-45221039308f)
 
+Vulnerability Path  ：/sysmanage/editrole.php
+
+Vulnerability type： SQL injection
+
+
+Vulnerability hazards：Attackers can exploit vulnerabilities to obtain sensitive database information
 
 See the login page.
 
