@@ -32,6 +32,7 @@ Content-Length: 69
 
 jsoncontent={"protocolType":"uploadiscuser","messagecontent":["1*"]} 
 ```
+<img width="537" alt="image" src="https://github.com/flyyue2001/cve/assets/88701694/9abe45d6-a506-496b-ac99-56b8f0783269">
 
 
 
